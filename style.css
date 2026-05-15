@@ -1,0 +1,425 @@
+/* =========================================================
+   ADVANCED MODERN UI - PRODUCT MANAGEMENT SYSTEM
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:#fff;
+    overflow-x:hidden;
+    position:relative;
+    padding:30px;
+}
+
+/* Background Glow */
+
+body::before{
+    content:'';
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:#2563eb;
+    border-radius:50%;
+    top:-120px;
+    left:-120px;
+    filter:blur(120px);
+    opacity:0.25;
+}
+
+body::after{
+    content:'';
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#7c3aed;
+    border-radius:50%;
+    bottom:-100px;
+    right:-100px;
+    filter:blur(120px);
+    opacity:0.25;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.container{
+    position:relative;
+    z-index:10;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.header h1{
+    font-size:46px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#d1d5db;
+    font-size:16px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    border:none;
+    border-radius:14px;
+    text-decoration:none;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-primary{
+    background:linear-gradient(45deg,#2563eb,#3b82f6);
+    color:#fff;
+}
+
+.btn-secondary{
+    background:rgba(255,255,255,0.12);
+    color:#fff;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.btn-danger{
+    background:linear-gradient(45deg,#dc2626,#ef4444);
+    color:#fff;
+}
+
+.btn-warning{
+    background:linear-gradient(45deg,#f59e0b,#fbbf24);
+    color:#fff;
+}
+
+/* =========================================================
+   FORM CONTAINER
+   ========================================================= */
+
+.form-container,
+.table-container,
+.search-section,
+.danger-zone,
+.tips-section{
+
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border-radius:24px;
+    padding:28px;
+    border:1px solid rgba(255,255,255,0.1);
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+}
+
+/* =========================================================
+   SEARCH SECTION
+   ========================================================= */
+
+.search-section{
+    transition:0.3s ease;
+}
+
+.search-section:hover{
+    transform:translateY(-4px);
+}
+
+.search-section h3{
+    margin-bottom:20px;
+    color:#fff;
+    font-size:24px;
+}
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+    color:#f1f5f9;
+}
+
+.form-control{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    outline:none;
+    background:rgba(255,255,255,0.15);
+    color:#fff;
+    font-size:15px;
+    transition:0.3s ease;
+}
+
+.form-control::placeholder{
+    color:#cbd5e1;
+}
+
+.form-control:focus{
+    background:rgba(255,255,255,0.22);
+    box-shadow:0 0 0 3px rgba(59,130,246,0.3);
+}
+
+/* Small Text */
+
+.form-group small{
+    display:block;
+    color:#cbd5e1;
+    font-size:0.82rem;
+    margin-top:6px;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.product-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    overflow:hidden;
+    border-radius:18px;
+}
+
+.product-table thead{
+    background:rgba(255,255,255,0.15);
+}
+
+.product-table th{
+    padding:16px;
+    text-align:left;
+    color:#fff;
+    font-size:15px;
+}
+
+.product-table td{
+    padding:15px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    color:#f1f5f9;
+}
+
+.product-table tbody tr{
+    transition:0.3s ease;
+}
+
+.product-table tbody tr:hover{
+    background:rgba(255,255,255,0.08);
+    transform:scale(1.01);
+}
+
+/* =========================================================
+   BADGES
+   ========================================================= */
+
+.badge{
+    display:inline-block;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.3px;
+}
+
+.badge-success{
+    background:rgba(34,197,94,0.2);
+    color:#4ade80;
+    border:1px solid rgba(74,222,128,0.3);
+}
+
+.badge-warning{
+    background:rgba(245,158,11,0.2);
+    color:#facc15;
+    border:1px solid rgba(250,204,21,0.3);
+}
+
+.badge-danger{
+    background:rgba(239,68,68,0.2);
+    color:#f87171;
+    border:1px solid rgba(248,113,113,0.3);
+}
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.alert{
+    padding:16px;
+    border-radius:14px;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.alert-success{
+    background:rgba(22,163,74,0.25);
+    border:1px solid rgba(74,222,128,0.3);
+    color:#86efac;
+}
+
+.alert-error{
+    background:rgba(220,38,38,0.25);
+    border:1px solid rgba(248,113,113,0.3);
+    color:#fca5a5;
+}
+
+.alert-info{
+    background:rgba(37,99,235,0.25);
+    border:1px solid rgba(96,165,250,0.3);
+    color:#93c5fd;
+}
+
+/* =========================================================
+   DANGER ZONE
+   ========================================================= */
+
+.danger-zone{
+    border-left:5px solid #f59e0b;
+}
+
+.danger-zone h4{
+    color:#facc15;
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.danger-zone p{
+    color:#fde68a;
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+/* =========================================================
+   TIPS SECTION
+   ========================================================= */
+
+.tips-section{
+    border-left:5px solid #3b82f6;
+}
+
+.tips-section h4{
+    color:#93c5fd;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.tips-section ul{
+    margin-left:20px;
+    color:#dbeafe;
+}
+
+.tips-section li{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+/* =========================================================
+   STATS CARDS
+   ========================================================= */
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.stat-card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:30px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s ease;
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+}
+
+.stat-card h3{
+    font-size:26px;
+    margin-bottom:12px;
+}
+
+.stat-card p{
+    font-size:18px;
+    color:#cbd5e1;
+}
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.action-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .header h1{
+        font-size:34px;
+    }
+
+    .product-table{
+        font-size:13px;
+    }
+
+    .action-buttons{
+        flex-direction:column;
+    }
+
+    .search-section,
+    .danger-zone,
+    .tips-section{
+        padding:20px;
+    }
+
+}
