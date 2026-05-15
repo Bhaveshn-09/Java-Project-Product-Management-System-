@@ -7,3 +7,5 @@ https://github.com/Bhaveshn-09/Java-Project-Product-Management-System-/blob/Java
 https://github.com/Bhaveshn-09/Java-Project-Product-Management-System-/blob/Java-ProductManagement/Display%20Product%201.png
 
 https://github.com/Bhaveshn-09/Java-Project-Product-Management-System-/blob/Java-ProductManagement/Report%20Product%201.png
+
+https://github.com/Bhaveshn-09/Java-Project-Product-Management-System-/blob/Java-ProductManagement/Update%20Product%201.png
